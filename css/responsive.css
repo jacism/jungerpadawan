@@ -1,0 +1,235 @@
+@media only screen and (max-width: 20em) {
+  .b-responsive-bottom {
+    position: absolute;
+    bottom: 0; }
+    .b-responsive-bottom img {
+      bottom: -2px; } }
+@media only screen and (min-width: 15em) {
+  .menu li {
+    float: inherit; }
+
+  #topbg-pic {
+    position: relative;
+    width: auto;
+    height: 100%;
+    left: -70%; }
+
+  .simplegallery {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+    height: auto; }
+
+  .simplegallery .content {
+    background: #fff;
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden; }
+
+  .simplegallery .content img {
+    width: 100%;
+    height: auto; }
+
+  .simplegallery .thumbnail {
+    float: left;
+    width: 100%;
+    margin: 0 0 2.9em 0; }
+
+  .simplegallery .thumbnail .thumb {
+    width: 33.3333%;
+    height: auto;
+    padding: 5px 5px 0 0;
+    cursor: pointer;
+    overflow: hidden;
+    display: block;
+    box-sizing: border-box;
+    float: left; }
+
+  .simplegallery .thumbnail .thumb a {
+    width: 100%; }
+
+  .simplegallery .thumbnail .thumb img {
+    border: 1px solid #9c9c9c;
+    width: 100%;
+    height: auto; }
+
+  .simplegallery .thumbnail .last {
+    margin: 0; }
+
+  .wrapper {
+    width: 100%;
+    max-width: 580px;
+    margin: 0 auto;
+    float: inherit;
+    margin-bottom: 150px; }
+
+  .barheadwrapper p {
+    top: inherit;
+    margin: 4px 0;
+    font-size: 0.66em !important; }
+
+  .referenzbox-wrapper {
+    width: 50%;
+    padding: 3px; }
+
+  .referenzbox-container {
+    padding: 0 3px 3px 3px; }
+
+  h2, h3 {
+    font-size: 1.6em;
+    margin: 0 0 1.2em 0; }
+
+  .buttonwrapper {
+    text-align: center;
+    left: 0;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    width: 100%; }
+
+  .rightmargin {
+    margin: 0; }
+
+  #headtitle {
+    line-height: 1.4; }
+
+  #top {
+    margin-bottom: 0.51em; }
+
+  #and, #top {
+    font-size: .6em; }
+
+  .mtxt {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 25px; }
+
+  .contactbtn {
+    padding: 5px 15px;
+    margin: 7px 0; }
+
+  .ref-description h4 {
+    font-size: 0.6em; }
+    .ref-description h4 span {
+      top: 40%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); }
+
+  #jacek-foto {
+    height: 140px;
+    width: 140px;
+    margin: 0 25px 25px 0; }
+
+  .responsive-spacer {
+    height: 73px; } }
+@media only screen and (min-width: 35em) {
+  #topbg-pic {
+    position: relative;
+    width: 100%;
+    height: auto;
+    left: 0; }
+
+  #and, #top {
+    font-size: .9em; }
+
+  .ref-description h4 {
+    font-size: 0.9em; }
+    .ref-description h4 span {
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      top: 50;
+      left: 50; }
+
+  #jacek-foto {
+    height: 195px;
+    width: 195px;
+    margin: 0 50px 50px 0; }
+
+  .mtxt {
+    padding: 0 65px; }
+
+  h2, h3 {
+    font-size: 2.1em;
+    margin: 0 0 1.2em 0; } }
+/*768*/
+@media only screen and (min-width: 48em) {
+  .menu .mtxt {
+    text-align: center; }
+
+  .menu ul {
+    display: inline-block; }
+
+  .menu a {
+    padding: 0 15px;
+    border-bottom: solid 2px transparent;
+    padding-bottom: 0.44em;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out; }
+
+  .menu a:hover {
+    border-bottom: solid 2px #1980B4; }
+
+  .menu li {
+    float: left;
+    margin: 0 0.44em; }
+
+  #and, #top {
+    font-size: 1.1em; }
+
+  h2, h3 {
+    font-size: 1.9em;
+    margin: 0 0 1.2em 0; }
+
+  #navtrigger {
+    top: 96vh; }
+
+  .referenzbox-wrapper {
+    width: 33%; }
+
+  .mtxt {
+    padding: 0 95px; } }
+/*960*/
+@media only screen and (min-width: 60em) {
+  #and, #top {
+    font-size: 1.5em; }
+
+  #navtrigger {
+    top: 98vh; }
+
+  .mtxt {
+    padding: 0 25px;
+    width: 960px; }
+
+  .responsive-spacer {
+    height: 99px; }
+
+  .buttonwrapper {
+    margin: 65px 0; } }
+/*1280*/
+@media only screen and (min-width: 80em) {
+  h2, h3 {
+    font-size: 2.4em;
+    margin: 0 0 1.2em 0; }
+
+  #and, #top {
+    font-size: 1.9em; }
+
+  .referenzbox-wrapper {
+    width: 25%; }
+
+  .responsive-spacer {
+    height: 175px; }
+
+  .responsive-spacer-top {
+    height: 300px; }
+
+  .responsive-spacer-top-bottom {
+    height: 200px; } }
