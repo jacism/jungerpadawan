@@ -1,0 +1,83 @@
+nav {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 4899;
+  border: none; }
+
+header {
+  position: relative;
+  width: 100%;
+  background: transparent;
+  line-height: 60px;
+ 
+}
+
+
+.cross {
+  background: none;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  padding: 13px 15px 0px 15px;
+  color: #fff;
+  border: 0;
+  font-size: 3em;
+  line-height: 65px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 5050; }
+
+.menu {
+  z-index: 4900;
+  font-weight: bold;
+  font-size: 0.8em;
+  width: 100%;
+  position: relative;
+  text-align: center; }
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style-image: none; }
+
+.menu li {
+  display: block;
+  padding: 15px 0 15px 0; }
+
+.menu li:hover {
+  display: block;
+  background: red;
+  padding: 15px 0 15px 0; }
+
+.menu ul li a {
+  text-decoration: none;
+  margin: 0px;
+  color: #fff; }
+
+.menu ul li a:hover {
+  color: #fff;
+  text-decoration: none; }
+
+.menu a {
+  text-decoration: none;
+  color: white; }
+
+.menu a:hover {
+  text-decoration: none;
+  color: white; }
+
+.glyphicon-home {
+  color: white;
+  font-size: 1.5em;
+  margin-top: 5px;
+  margin: 0 auto; }
+
+.oc {
+  opacity: 1; }
+
+.sticky {
+  position: fixed;
+  top: 0; }
