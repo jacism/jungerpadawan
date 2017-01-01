@@ -16,6 +16,11 @@ $( document ).ready( function () {
 	$( ".menu" )
 		.hide();
 
+	// restore scrollTop
+	if ( sessionStorage.scrollTop != "undefined" ) {
+		$( window ).scrollTop( sessionStorage.scrollTop );
+	}
+
 	// Fit text
 	$( "#responsive_headline" ).fitText();
 	$( "#wd" ).fitText( 0.72 );
@@ -104,6 +109,7 @@ $( document ).ready( function () {
 		// .addIndicators({ name: "top bar y" })
 		.addTo( controller );
 
+	// ZZZ Kommentar vergessen oder nicht notwending?
 	new ScrollMagic.Scene({
 			triggerElement: "#skillbartrigger"
 		})
@@ -116,15 +122,20 @@ $( document ).ready( function () {
 	////////////
 	// Events //
 	////////////
-	// Sticky Header
+	// Save scrollTop
+	window.onbeforeunload = function () {
+		sessionStorage.scrollTop = $( this ).scrollTop();
+	};
+
+	// Sticky header
 	var wholevh = $( "#mwrapper" ).height();
 	$( window ).scroll( function () {
 		if ( $( window ).scrollTop() > wholevh - 1 ) {
-			$('#navi').removeClass('sticky');
-			$('#navi').addClass('sticky');
+			$( '#navi' ).removeClass( 'sticky' );
+			$( '#navi' ).addClass( 'sticky' );
 
 		} else {
-			$('#navi').removeClass('sticky');
+			$( '#navi' ).removeClass( 'sticky' );
 		}
 	});
 
@@ -133,7 +144,7 @@ $( document ).ready( function () {
 	});
 
 	$( '#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4' ).click( function () {
-		$( this ).toggleClass('open');
+		$( this ).toggleClass( 'open' );
 	});
 
 	$( 'a[href*="#"]:not([href="#"])' ).click( function () {

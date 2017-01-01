@@ -27,7 +27,7 @@
 .fancybox-skin {
 	position: relative;
 	background: #F1F2F4;
-    
+
 	color: #444;
 	text-shadow: none;
 	-webkit-border-radius: 2px;
@@ -40,8 +40,8 @@
 }
 
 .fancybox-opened .fancybox-skin {
-	
-	       
+
+
 }
 
 .fancybox-outer, .fancybox-inner {
@@ -85,7 +85,7 @@
 	left: 50%;
 	margin-top: -60px;
 	margin-left: -60px;
-	
+
 
 	z-index: 8060;
 }
@@ -93,7 +93,7 @@
 #fancybox-loading div {
 	width: 120px;
 	height: 120px;
-	background: url('loading.svg') center center no-repeat !important;
+	background: url('/img/loading.svg') center center no-repeat !important;
 }
 
 .fancybox-close {

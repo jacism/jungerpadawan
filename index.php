@@ -10,23 +10,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="apple-touch-icon" href="apple-touch-icon.png">
 		<!-- Stylesheets -->
-		<!-- ZZZ wurde hier media="screen" vergessen oder ist es hier nicht notwending? -->
-		<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css" type="text/css" />
 		<link rel="stylesheet" href="css/main.css" type="text/css" media="screen" />
-		<link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen" />
-		<link rel="stylesheet" href="css/menu.css" type="text/css" media="screen" />
-		<!-- Scripts -->
-		<!-- Vendor -->
-		<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js" type="text/javascript" ></script>
-		<script src="js/jquery.min.js" type="text/javascript" ></script>
-		<script src="js/jquery.fittext.js" type="text/javascript" ></script>
-		<script src="js/jquery.easing.min.js" type="text/javascript" ></script>
-		<script src="js/jquery.fancybox.pack.js" type="text/javascript" ></script>
-		<script src="lib/tweenmax/lib/greensock/TweenMax.min.js" type="text/javascript" ></script>
-		<script src="lib/scrollmagic/minified/ScrollMagic.min.js" type="text/javascript" ></script>
-		<script src="lib/scrollmagic/minified/plugins/animation.gsap.min.js" type="text/javascript" ></script>
-		<!-- Custom -->
-		<script src="js/main.js" type="text/javascript" ></script>
+		<link rel="stylesheet" href="css/vendor/responsive.css" type="text/css" media="screen" />
 	</head>
 
 	<body>
@@ -98,6 +83,7 @@
 					<div class="responsive-spacer"></div>
 					<h2>Hallo, mein Name ist Jacek</h2>
 					<p>
+						<!-- ZZZ das Bild hinzufügen (siehe "img" Ordner) --->
 						<img src="img/jacek.jpg" id="jacek-foto">
 						…und das hier ist meine Bewerbung als Webdesigner. <br>
 						Ich habe vor kurzem mein Intermedia-Design-Studium in Trier abgeschlossen. Der Schwerpunkt meiner Bachelorarbeit lag auf Webtechnologien, konkret in der Animation von SVG. Während des Studium habe ich schon viel Berufserfahrung sammeln können: So war ich als Freelancer für diverse kleine Unternehmen tätig, habe Webseiten, Logos und Flyer erstellt. Besonders viel Erfahrung gesammelt habe ich in meiner Teilzeitstelle als Designer in einer Trierer Werbeagentur - Hiervon habe ich meine Studienzeit selbst finanziert. <br>
@@ -341,14 +327,27 @@
 			</div>
 		</div>
 
-		 <div class="fullwidth" id="kontakt">
-			 <div class="mtxt">
-				 <div class="refcontainer">
-					 <div class="responsive-spacer"></div>
-					 <h2>Lernen wir uns kennen</h2>
-					 <iframe src="kontakt.php" scrolling="no"> </iframe>
-				 </div>
-			 </div>
-		 </div>
-	 </body>
+		<div class="fullwidth" id="kontakt">
+			<div class="mtxt">
+				<div class="refcontainer">
+					<div class="responsive-spacer"></div>
+					<h2>Lernen wir uns kennen</h2>
+					<iframe src="kontakt.php" scrolling="no"></iframe>
+				</div>
+			</div>
+		</div>
+
+		<!-- Scripts -->
+		<!-- Vendor -->
+		<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js" type="text/javascript" ></script>
+		<script src="js/vendor/jquery.min.js" type="text/javascript" ></script>
+		<script src="js/vendor/jquery.fittext.js" type="text/javascript" ></script>
+		<script src="js/vendor/jquery.easing.min.js" type="text/javascript" ></script>
+		<script src="js/vendor/jquery.fancybox.pack.js" type="text/javascript" ></script>
+		<script src="lib/tweenmax/lib/greensock/TweenMax.min.js" type="text/javascript" ></script>
+		<script src="lib/scrollmagic/minified/ScrollMagic.min.js" type="text/javascript" ></script>
+		<script src="lib/scrollmagic/minified/plugins/animation.gsap.min.js" type="text/javascript" ></script>
+		<!-- Custom -->
+		<script src="js/main.js" type="text/javascript" ></script>
+	</body>
 </html>

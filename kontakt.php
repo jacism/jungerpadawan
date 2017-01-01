@@ -5,14 +5,13 @@
     <head>
       <meta charset="utf-8">
           <link rel="stylesheet" href="css/main.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen" />
-     <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/vendor/responsive.css" type="text/css" media="screen" />
     </head>
-    
+
    <body>
 
          <?php
-        
+
 
 if(!function_exists("kontaktformular")){
 function kontaktformular($empf,$formname,$formid="cforma310",$pfad=""){
@@ -75,33 +74,33 @@ $return .= "
       <td><input class=\"tx\" type=\"text\" placeholder=\"E-Mail\" name=\"email_".$formid."\" value=\"".$data['email']."\" /></td>
    </tr>
   <tr>
-      
+
       <td colspan=\"2\">
       <textarea class=\"tx writemefield\" placeholder=\"NACHRICHT\" rows=\"5\" name=\"nachricht_".$formid."\">".$data['nachricht']."</textarea>
       </td>
-      
+
    </tr>
    <!--captcha-->
    <tr>
-   
+
       <td><img src=\"".$pfad."secimg.php?formid=".$formid."\" alt=\"Sicherheitscode (Spamschutz)\" title=\"Sicherheitscode: Anti-Spam-System\" width=\"90\" height=\"30\" id=\"captachafeld\" />
       </td>
-      
+
       <td>
-         <input type=\"text\" class=\"tx captchafield\" placeholder=\"CAPTCHA\" name=\"captcha_".$formid."\" maxlength=\"6\" style=\"width: 7em; \" /> 
+         <input type=\"text\" class=\"tx captchafield\" placeholder=\"CAPTCHA\" name=\"captcha_".$formid."\" maxlength=\"6\" style=\"width: 7em; \" />
       </td>
    </tr>
-   
+
    <tr>
-   
+
       <td colspan=\"2\">
       <input type=\"submit\" name=\"submit_".$formid."\" value=\"Absenden\" class=\"thebutton contactbtn refbtn\" id=\"thebutton\"/>
       </td>
-      
+
    </tr>
-   
+
    <input type=\"hidden\" name=\"formid\" value=\"".$formid."\" />
-   
+
 </table>
 </form>
 ";
@@ -170,7 +169,7 @@ Nachricht:
 
 				$mail_header .= "\nMIME-Version: 1.0"."";
 				$mail_header .= "\nContent-Type: multipart/mixed;  boundary=\"".$boundary."\"";
-		
+
 				$mail_body  = "\nMIME-Version: 1.0"."";
 				$mail_body .= "\nContent-Type: multipart/mixed;  boundary=\"".$boundary."\"";
 				$mail_body .= "\n\nThis is a multi-part message in MIME format  --  Dies ist eine mehrteilige Nachricht im MIME-Format";
@@ -207,7 +206,7 @@ Nachricht:
 	    $return .= "<br /><p style=\"border: 1px solid green; padding: 5px;\">
 		<b>Ihre Nachricht wurde erfolgreich verschickt und wird so schnell wie m&ouml;glich bearbeitet.</b></p>";
 	    }
-	
+
 	if(isset($_POST['submit_'.$formid]) && !empty($_POST['submit_'.$formid]) && $error){
 	    $return .= "<br /><p style=\"border: 1px solid red; padding: 5px;\">
 	    Sie haben nicht alle ben&ouml;tigen Felder (*) ausgef&uuml;llt oder den Spamschutzcode nicht richtig eingegeben.</p>";
@@ -294,7 +293,7 @@ function check_mail($email){
 
 // Mime-Typen von Dateien bestimmen
 /*$filename		Dateiname zu dem der Dateityp bestimmt werden soll
-  
+
 RETURN: Mime-Typ
   */
 if(!function_exists('mime_content_type')) {
@@ -372,8 +371,8 @@ function mime_content_type($filename) {
 }
 
         echo kontaktformular(array("helloiamjac@gmail.com","jacek@kuclo.com"),"Kontaktformular","form1");
-         ?>  
-         
+         ?>
+
    <div class="buttonwrapper">
 <hr>
 
@@ -382,13 +381,13 @@ Jacek Kuclo <i class="fa fa-circle" aria-hidden="true"></i>
 Nikolaistr. 1 <i class="fa fa-circle" aria-hidden="true"></i>
 30169 Hannover <i class="fa fa-circle" aria-hidden="true"></i>
 0171 223 7677 <i class="fa fa-circle" aria-hidden="true"></i>
-jacek@kuclo.com 
+jacek@kuclo.com
 
 
 </p>
 </div>
 
-                   
+
    </body>
-   
+
 </html>

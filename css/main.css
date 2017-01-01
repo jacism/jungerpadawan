@@ -1,8 +1,8 @@
 /*! ******** made by Jacek with <3 *********** **/
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:500,400,300,100);
 @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
-@import url(normalize.min.css);
-@import url(jquery.fancybox.css);
+@import url(vendor/normalize.min.css);
+@import url(vendor/fancybox/jquery.fancybox.css);
 .skillbar {
   position: relative;
   display: block;
@@ -147,7 +147,7 @@ body {
   /* centers the loading animation horizontally one the screen */
   top: 50%;
   /* centers the loading animation vertically one the screen */
-  background-image: url(loading.svg);
+  background-image: url(/img/loading.svg);
   /* path to your loading animation */
   background-repeat: no-repeat;
   background-position: center;
